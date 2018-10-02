@@ -42,6 +42,8 @@
 		490E1F1121637CC0006BA702 /* ArabiaThawabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF421637CC0006BA702 /* ArabiaThawabit.swift */; };
 		490E1F1221637CC0006BA702 /* MNFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF521637CC0006BA702 /* MNFile.swift */; };
 		490E1F1321637CC0006BA702 /* MNNass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF621637CC0006BA702 /* MNNass.swift */; };
+		490E1F1521637D40006BA702 /* MNSafha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1F1421637D40006BA702 /* MNSafha.swift */; };
+		490E1F17216385B0006BA702 /* MNDBSafha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1F16216385B0006BA702 /* MNDBSafha.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		490E1EF421637CC0006BA702 /* ArabiaThawabit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArabiaThawabit.swift; sourceTree = "<group>"; };
 		490E1EF521637CC0006BA702 /* MNFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFile.swift; sourceTree = "<group>"; };
 		490E1EF621637CC0006BA702 /* MNNass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNNass.swift; sourceTree = "<group>"; };
+		490E1F1421637D40006BA702 /* MNSafha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNSafha.swift; sourceTree = "<group>"; };
+		490E1F16216385B0006BA702 /* MNDBSafha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNDBSafha.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		490E1E9921637C9D006BA702 = {
 			isa = PBXGroup;
 			children = (
+				490E1F16216385B0006BA702 /* MNDBSafha.swift */,
 				490E1EA421637C9D006BA702 /* alkotobi */,
 				490E1EB721637C9E006BA702 /* alkotobiTests */,
 				490E1EC221637C9E006BA702 /* alkotobiUITests */,
@@ -161,6 +166,7 @@
 				490E1ED721637CBF006BA702 /* MNDatabase.swift */,
 				490E1EF521637CC0006BA702 /* MNFile.swift */,
 				490E1ED121637CBF006BA702 /* MNKalima.swift */,
+				490E1F1421637D40006BA702 /* MNSafha.swift */,
 				490E1EF621637CC0006BA702 /* MNNass.swift */,
 				490E1ED821637CBF006BA702 /* SQLite */,
 				490E1ED221637CBF006BA702 /* SQLiteObjc */,
@@ -408,7 +414,9 @@
 				490E1EFB21637CC0006BA702 /* Blob.swift in Sources */,
 				490E1EFF21637CC0006BA702 /* Helpers.swift in Sources */,
 				490E1F0A21637CC0006BA702 /* CustomFunctions.swift in Sources */,
+				490E1F1521637D40006BA702 /* MNSafha.swift in Sources */,
 				490E1EF821637CC0006BA702 /* SQLite-Bridging.m in Sources */,
+				490E1F17216385B0006BA702 /* MNDBSafha.swift in Sources */,
 				490E1F0021637CC0006BA702 /* Cipher.swift in Sources */,
 				490E1EFC21637CC0006BA702 /* Errors.swift in Sources */,
 				490E1F0121637CC0006BA702 /* RTree.swift in Sources */,
