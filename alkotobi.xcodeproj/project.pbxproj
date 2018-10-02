@@ -13,6 +13,35 @@
 		490E1EAD21637C9E006BA702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490E1EAB21637C9E006BA702 /* Main.storyboard */; };
 		490E1EB921637C9E006BA702 /* alkotobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EB821637C9E006BA702 /* alkotobiTests.swift */; };
 		490E1EC421637C9E006BA702 /* alkotobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EC321637C9E006BA702 /* alkotobiUITests.swift */; };
+		490E1EF721637CC0006BA702 /* MNKalima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1ED121637CBF006BA702 /* MNKalima.swift */; };
+		490E1EF821637CC0006BA702 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 490E1ED521637CBF006BA702 /* SQLite-Bridging.m */; };
+		490E1EF921637CC0006BA702 /* MNDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1ED721637CBF006BA702 /* MNDatabase.swift */; };
+		490E1EFA21637CC0006BA702 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EDA21637CBF006BA702 /* Connection.swift */; };
+		490E1EFB21637CC0006BA702 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EDB21637CBF006BA702 /* Blob.swift */; };
+		490E1EFC21637CC0006BA702 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EDC21637CBF006BA702 /* Errors.swift */; };
+		490E1EFD21637CC0006BA702 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EDD21637CBF006BA702 /* Statement.swift */; };
+		490E1EFE21637CC0006BA702 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EDE21637CBF006BA702 /* Value.swift */; };
+		490E1EFF21637CC0006BA702 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EDF21637CBF006BA702 /* Helpers.swift */; };
+		490E1F0021637CC0006BA702 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE121637CBF006BA702 /* Cipher.swift */; };
+		490E1F0121637CC0006BA702 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE221637CBF006BA702 /* RTree.swift */; };
+		490E1F0221637CC0006BA702 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE321637CBF006BA702 /* FTS4.swift */; };
+		490E1F0321637CC0006BA702 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE421637CBF006BA702 /* FTS5.swift */; };
+		490E1F0421637CC0006BA702 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE521637CBF006BA702 /* Foundation.swift */; };
+		490E1F0521637CC0006BA702 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE821637CBF006BA702 /* Query.swift */; };
+		490E1F0621637CC0006BA702 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EE921637CBF006BA702 /* Coding.swift */; };
+		490E1F0721637CC0006BA702 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EEA21637CBF006BA702 /* Expression.swift */; };
+		490E1F0821637CC0006BA702 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EEB21637CBF006BA702 /* CoreFunctions.swift */; };
+		490E1F0921637CC0006BA702 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EEC21637CBF006BA702 /* Collation.swift */; };
+		490E1F0A21637CC0006BA702 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EED21637CBF006BA702 /* CustomFunctions.swift */; };
+		490E1F0B21637CC0006BA702 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EEE21637CBF006BA702 /* DateAndTimeFunctions.swift */; };
+		490E1F0C21637CC0006BA702 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EEF21637CBF006BA702 /* Setter.swift */; };
+		490E1F0D21637CC0006BA702 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF021637CBF006BA702 /* Operators.swift */; };
+		490E1F0E21637CC0006BA702 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF121637CBF006BA702 /* Schema.swift */; };
+		490E1F0F21637CC0006BA702 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF221637CBF006BA702 /* AggregateFunctions.swift */; };
+		490E1F1021637CC0006BA702 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 490E1EF321637CBF006BA702 /* Info.plist */; };
+		490E1F1121637CC0006BA702 /* ArabiaThawabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF421637CC0006BA702 /* ArabiaThawabit.swift */; };
+		490E1F1221637CC0006BA702 /* MNFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF521637CC0006BA702 /* MNFile.swift */; };
+		490E1F1321637CC0006BA702 /* MNNass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EF621637CC0006BA702 /* MNNass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +75,38 @@
 		490E1EBF21637C9E006BA702 /* alkotobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alkotobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		490E1EC321637C9E006BA702 /* alkotobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alkotobiUITests.swift; sourceTree = "<group>"; };
 		490E1EC521637C9E006BA702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490E1ED121637CBF006BA702 /* MNKalima.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNKalima.swift; sourceTree = "<group>"; };
+		490E1ED421637CBF006BA702 /* SQLite-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridging.h"; sourceTree = "<group>"; };
+		490E1ED521637CBF006BA702 /* SQLite-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLite-Bridging.m"; sourceTree = "<group>"; };
+		490E1ED621637CBF006BA702 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		490E1ED721637CBF006BA702 /* MNDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDatabase.swift; sourceTree = "<group>"; };
+		490E1EDA21637CBF006BA702 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		490E1EDB21637CBF006BA702 /* Blob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		490E1EDC21637CBF006BA702 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		490E1EDD21637CBF006BA702 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		490E1EDE21637CBF006BA702 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		490E1EDF21637CBF006BA702 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		490E1EE121637CBF006BA702 /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		490E1EE221637CBF006BA702 /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
+		490E1EE321637CBF006BA702 /* FTS4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS4.swift; sourceTree = "<group>"; };
+		490E1EE421637CBF006BA702 /* FTS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS5.swift; sourceTree = "<group>"; };
+		490E1EE521637CBF006BA702 /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		490E1EE621637CBF006BA702 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		490E1EE821637CBF006BA702 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		490E1EE921637CBF006BA702 /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		490E1EEA21637CBF006BA702 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		490E1EEB21637CBF006BA702 /* CoreFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
+		490E1EEC21637CBF006BA702 /* Collation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
+		490E1EED21637CBF006BA702 /* CustomFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
+		490E1EEE21637CBF006BA702 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		490E1EEF21637CBF006BA702 /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
+		490E1EF021637CBF006BA702 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		490E1EF121637CBF006BA702 /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		490E1EF221637CBF006BA702 /* AggregateFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
+		490E1EF321637CBF006BA702 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490E1EF421637CC0006BA702 /* ArabiaThawabit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArabiaThawabit.swift; sourceTree = "<group>"; };
+		490E1EF521637CC0006BA702 /* MNFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNFile.swift; sourceTree = "<group>"; };
+		490E1EF621637CC0006BA702 /* MNNass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNNass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +157,13 @@
 		490E1EA421637C9D006BA702 /* alkotobi */ = {
 			isa = PBXGroup;
 			children = (
+				490E1EF421637CC0006BA702 /* ArabiaThawabit.swift */,
+				490E1ED721637CBF006BA702 /* MNDatabase.swift */,
+				490E1EF521637CC0006BA702 /* MNFile.swift */,
+				490E1ED121637CBF006BA702 /* MNKalima.swift */,
+				490E1EF621637CC0006BA702 /* MNNass.swift */,
+				490E1ED821637CBF006BA702 /* SQLite */,
+				490E1ED221637CBF006BA702 /* SQLiteObjc */,
 				490E1EA521637C9D006BA702 /* AppDelegate.swift */,
 				490E1EA721637C9D006BA702 /* ViewController.swift */,
 				490E1EA921637C9E006BA702 /* Assets.xcassets */,
@@ -122,6 +190,79 @@
 				490E1EC521637C9E006BA702 /* Info.plist */,
 			);
 			path = alkotobiUITests;
+			sourceTree = "<group>";
+		};
+		490E1ED221637CBF006BA702 /* SQLiteObjc */ = {
+			isa = PBXGroup;
+			children = (
+				490E1ED321637CBF006BA702 /* include */,
+				490E1ED521637CBF006BA702 /* SQLite-Bridging.m */,
+				490E1ED621637CBF006BA702 /* fts3_tokenizer.h */,
+			);
+			path = SQLiteObjc;
+			sourceTree = "<group>";
+		};
+		490E1ED321637CBF006BA702 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				490E1ED421637CBF006BA702 /* SQLite-Bridging.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		490E1ED821637CBF006BA702 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				490E1ED921637CBF006BA702 /* Core */,
+				490E1EDF21637CBF006BA702 /* Helpers.swift */,
+				490E1EE021637CBF006BA702 /* Extensions */,
+				490E1EE521637CBF006BA702 /* Foundation.swift */,
+				490E1EE621637CBF006BA702 /* SQLite.h */,
+				490E1EE721637CBF006BA702 /* Typed */,
+				490E1EF321637CBF006BA702 /* Info.plist */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		490E1ED921637CBF006BA702 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EDA21637CBF006BA702 /* Connection.swift */,
+				490E1EDB21637CBF006BA702 /* Blob.swift */,
+				490E1EDC21637CBF006BA702 /* Errors.swift */,
+				490E1EDD21637CBF006BA702 /* Statement.swift */,
+				490E1EDE21637CBF006BA702 /* Value.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		490E1EE021637CBF006BA702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EE121637CBF006BA702 /* Cipher.swift */,
+				490E1EE221637CBF006BA702 /* RTree.swift */,
+				490E1EE321637CBF006BA702 /* FTS4.swift */,
+				490E1EE421637CBF006BA702 /* FTS5.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		490E1EE721637CBF006BA702 /* Typed */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EE821637CBF006BA702 /* Query.swift */,
+				490E1EE921637CBF006BA702 /* Coding.swift */,
+				490E1EEA21637CBF006BA702 /* Expression.swift */,
+				490E1EEB21637CBF006BA702 /* CoreFunctions.swift */,
+				490E1EEC21637CBF006BA702 /* Collation.swift */,
+				490E1EED21637CBF006BA702 /* CustomFunctions.swift */,
+				490E1EEE21637CBF006BA702 /* DateAndTimeFunctions.swift */,
+				490E1EEF21637CBF006BA702 /* Setter.swift */,
+				490E1EF021637CBF006BA702 /* Operators.swift */,
+				490E1EF121637CBF006BA702 /* Schema.swift */,
+				490E1EF221637CBF006BA702 /* AggregateFunctions.swift */,
+			);
+			path = Typed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +371,7 @@
 			files = (
 				490E1EAA21637C9E006BA702 /* Assets.xcassets in Resources */,
 				490E1EAD21637C9E006BA702 /* Main.storyboard in Resources */,
+				490E1F1021637CC0006BA702 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +396,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490E1EFD21637CC0006BA702 /* Statement.swift in Sources */,
+				490E1F0B21637CC0006BA702 /* DateAndTimeFunctions.swift in Sources */,
 				490E1EA821637C9D006BA702 /* ViewController.swift in Sources */,
+				490E1F1321637CC0006BA702 /* MNNass.swift in Sources */,
+				490E1F0421637CC0006BA702 /* Foundation.swift in Sources */,
+				490E1F1221637CC0006BA702 /* MNFile.swift in Sources */,
+				490E1F0621637CC0006BA702 /* Coding.swift in Sources */,
+				490E1F0721637CC0006BA702 /* Expression.swift in Sources */,
+				490E1EFA21637CC0006BA702 /* Connection.swift in Sources */,
+				490E1EFB21637CC0006BA702 /* Blob.swift in Sources */,
+				490E1EFF21637CC0006BA702 /* Helpers.swift in Sources */,
+				490E1F0A21637CC0006BA702 /* CustomFunctions.swift in Sources */,
+				490E1EF821637CC0006BA702 /* SQLite-Bridging.m in Sources */,
+				490E1F0021637CC0006BA702 /* Cipher.swift in Sources */,
+				490E1EFC21637CC0006BA702 /* Errors.swift in Sources */,
+				490E1F0121637CC0006BA702 /* RTree.swift in Sources */,
+				490E1F0C21637CC0006BA702 /* Setter.swift in Sources */,
+				490E1EF921637CC0006BA702 /* MNDatabase.swift in Sources */,
+				490E1F0D21637CC0006BA702 /* Operators.swift in Sources */,
+				490E1EFE21637CC0006BA702 /* Value.swift in Sources */,
+				490E1F0321637CC0006BA702 /* FTS5.swift in Sources */,
+				490E1F0F21637CC0006BA702 /* AggregateFunctions.swift in Sources */,
 				490E1EA621637C9D006BA702 /* AppDelegate.swift in Sources */,
+				490E1F0E21637CC0006BA702 /* Schema.swift in Sources */,
+				490E1F0921637CC0006BA702 /* Collation.swift in Sources */,
+				490E1F1121637CC0006BA702 /* ArabiaThawabit.swift in Sources */,
+				490E1F0821637CC0006BA702 /* CoreFunctions.swift in Sources */,
+				490E1F0221637CC0006BA702 /* FTS4.swift in Sources */,
+				490E1F0521637CC0006BA702 /* Query.swift in Sources */,
+				490E1EF721637CC0006BA702 /* MNKalima.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
