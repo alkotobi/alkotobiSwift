@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		490E1EA621637C9D006BA702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EA521637C9D006BA702 /* AppDelegate.swift */; };
+		490E1EA821637C9D006BA702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EA721637C9D006BA702 /* ViewController.swift */; };
+		490E1EAA21637C9E006BA702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490E1EA921637C9E006BA702 /* Assets.xcassets */; };
+		490E1EAD21637C9E006BA702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490E1EAB21637C9E006BA702 /* Main.storyboard */; };
+		490E1EB921637C9E006BA702 /* alkotobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EB821637C9E006BA702 /* alkotobiTests.swift */; };
+		490E1EC421637C9E006BA702 /* alkotobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E1EC321637C9E006BA702 /* alkotobiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		490E1EB521637C9E006BA702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490E1E9A21637C9D006BA702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490E1EA121637C9D006BA702;
+			remoteInfo = alkotobi;
+		};
+		490E1EC021637C9E006BA702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490E1E9A21637C9D006BA702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490E1EA121637C9D006BA702;
+			remoteInfo = alkotobi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		490E1EA221637C9D006BA702 /* alkotobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alkotobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		490E1EA521637C9D006BA702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		490E1EA721637C9D006BA702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		490E1EA921637C9E006BA702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		490E1EAC21637C9E006BA702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		490E1EAE21637C9E006BA702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490E1EAF21637C9E006BA702 /* alkotobi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = alkotobi.entitlements; sourceTree = "<group>"; };
+		490E1EB421637C9E006BA702 /* alkotobiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alkotobiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490E1EB821637C9E006BA702 /* alkotobiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alkotobiTests.swift; sourceTree = "<group>"; };
+		490E1EBA21637C9E006BA702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490E1EBF21637C9E006BA702 /* alkotobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alkotobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490E1EC321637C9E006BA702 /* alkotobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alkotobiUITests.swift; sourceTree = "<group>"; };
+		490E1EC521637C9E006BA702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		490E1E9F21637C9D006BA702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490E1EB121637C9E006BA702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490E1EBC21637C9E006BA702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		490E1E9921637C9D006BA702 = {
+			isa = PBXGroup;
+			children = (
+				490E1EA421637C9D006BA702 /* alkotobi */,
+				490E1EB721637C9E006BA702 /* alkotobiTests */,
+				490E1EC221637C9E006BA702 /* alkotobiUITests */,
+				490E1EA321637C9D006BA702 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		490E1EA321637C9D006BA702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EA221637C9D006BA702 /* alkotobi.app */,
+				490E1EB421637C9E006BA702 /* alkotobiTests.xctest */,
+				490E1EBF21637C9E006BA702 /* alkotobiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		490E1EA421637C9D006BA702 /* alkotobi */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EA521637C9D006BA702 /* AppDelegate.swift */,
+				490E1EA721637C9D006BA702 /* ViewController.swift */,
+				490E1EA921637C9E006BA702 /* Assets.xcassets */,
+				490E1EAB21637C9E006BA702 /* Main.storyboard */,
+				490E1EAE21637C9E006BA702 /* Info.plist */,
+				490E1EAF21637C9E006BA702 /* alkotobi.entitlements */,
+			);
+			path = alkotobi;
+			sourceTree = "<group>";
+		};
+		490E1EB721637C9E006BA702 /* alkotobiTests */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EB821637C9E006BA702 /* alkotobiTests.swift */,
+				490E1EBA21637C9E006BA702 /* Info.plist */,
+			);
+			path = alkotobiTests;
+			sourceTree = "<group>";
+		};
+		490E1EC221637C9E006BA702 /* alkotobiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				490E1EC321637C9E006BA702 /* alkotobiUITests.swift */,
+				490E1EC521637C9E006BA702 /* Info.plist */,
+			);
+			path = alkotobiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		490E1EA121637C9D006BA702 /* alkotobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490E1EC821637C9E006BA702 /* Build configuration list for PBXNativeTarget "alkotobi" */;
+			buildPhases = (
+				490E1E9E21637C9D006BA702 /* Sources */,
+				490E1E9F21637C9D006BA702 /* Frameworks */,
+				490E1EA021637C9D006BA702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = alkotobi;
+			productName = alkotobi;
+			productReference = 490E1EA221637C9D006BA702 /* alkotobi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		490E1EB321637C9E006BA702 /* alkotobiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490E1ECB21637C9E006BA702 /* Build configuration list for PBXNativeTarget "alkotobiTests" */;
+			buildPhases = (
+				490E1EB021637C9E006BA702 /* Sources */,
+				490E1EB121637C9E006BA702 /* Frameworks */,
+				490E1EB221637C9E006BA702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490E1EB621637C9E006BA702 /* PBXTargetDependency */,
+			);
+			name = alkotobiTests;
+			productName = alkotobiTests;
+			productReference = 490E1EB421637C9E006BA702 /* alkotobiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		490E1EBE21637C9E006BA702 /* alkotobiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490E1ECE21637C9E006BA702 /* Build configuration list for PBXNativeTarget "alkotobiUITests" */;
+			buildPhases = (
+				490E1EBB21637C9E006BA702 /* Sources */,
+				490E1EBC21637C9E006BA702 /* Frameworks */,
+				490E1EBD21637C9E006BA702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490E1EC121637C9E006BA702 /* PBXTargetDependency */,
+			);
+			name = alkotobiUITests;
+			productName = alkotobiUITests;
+			productReference = 490E1EBF21637C9E006BA702 /* alkotobiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		490E1E9A21637C9D006BA702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = merhab;
+				TargetAttributes = {
+					490E1EA121637C9D006BA702 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					490E1EB321637C9E006BA702 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 490E1EA121637C9D006BA702;
+					};
+					490E1EBE21637C9E006BA702 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 490E1EA121637C9D006BA702;
+					};
+				};
+			};
+			buildConfigurationList = 490E1E9D21637C9D006BA702 /* Build configuration list for PBXProject "alkotobi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 490E1E9921637C9D006BA702;
+			productRefGroup = 490E1EA321637C9D006BA702 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				490E1EA121637C9D006BA702 /* alkotobi */,
+				490E1EB321637C9E006BA702 /* alkotobiTests */,
+				490E1EBE21637C9E006BA702 /* alkotobiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		490E1EA021637C9D006BA702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490E1EAA21637C9E006BA702 /* Assets.xcassets in Resources */,
+				490E1EAD21637C9E006BA702 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490E1EB221637C9E006BA702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490E1EBD21637C9E006BA702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		490E1E9E21637C9D006BA702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490E1EA821637C9D006BA702 /* ViewController.swift in Sources */,
+				490E1EA621637C9D006BA702 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490E1EB021637C9E006BA702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490E1EB921637C9E006BA702 /* alkotobiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490E1EBB21637C9E006BA702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490E1EC421637C9E006BA702 /* alkotobiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		490E1EB621637C9E006BA702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490E1EA121637C9D006BA702 /* alkotobi */;
+			targetProxy = 490E1EB521637C9E006BA702 /* PBXContainerItemProxy */;
+		};
+		490E1EC121637C9E006BA702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490E1EA121637C9D006BA702 /* alkotobi */;
+			targetProxy = 490E1EC021637C9E006BA702 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		490E1EAB21637C9E006BA702 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				490E1EAC21637C9E006BA702 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		490E1EC621637C9E006BA702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		490E1EC721637C9E006BA702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		490E1EC921637C9E006BA702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = alkotobi/alkotobi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = alkotobi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merhab.alkotobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		490E1ECA21637C9E006BA702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = alkotobi/alkotobi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = alkotobi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merhab.alkotobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		490E1ECC21637C9E006BA702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = alkotobiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merhab.alkotobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alkotobi.app/Contents/MacOS/alkotobi";
+			};
+			name = Debug;
+		};
+		490E1ECD21637C9E006BA702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = alkotobiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merhab.alkotobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alkotobi.app/Contents/MacOS/alkotobi";
+			};
+			name = Release;
+		};
+		490E1ECF21637C9E006BA702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = alkotobiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merhab.alkotobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = alkotobi;
+			};
+			name = Debug;
+		};
+		490E1ED021637C9E006BA702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = alkotobiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merhab.alkotobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = alkotobi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		490E1E9D21637C9D006BA702 /* Build configuration list for PBXProject "alkotobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490E1EC621637C9E006BA702 /* Debug */,
+				490E1EC721637C9E006BA702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490E1EC821637C9E006BA702 /* Build configuration list for PBXNativeTarget "alkotobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490E1EC921637C9E006BA702 /* Debug */,
+				490E1ECA21637C9E006BA702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490E1ECB21637C9E006BA702 /* Build configuration list for PBXNativeTarget "alkotobiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490E1ECC21637C9E006BA702 /* Debug */,
+				490E1ECD21637C9E006BA702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490E1ECE21637C9E006BA702 /* Build configuration list for PBXNativeTarget "alkotobiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490E1ECF21637C9E006BA702 /* Debug */,
+				490E1ED021637C9E006BA702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 490E1E9A21637C9D006BA702 /* Project object */;
+}
