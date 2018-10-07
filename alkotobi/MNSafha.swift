@@ -7,16 +7,20 @@
 //
 
 import Foundation
-import Cocoa
+//import Cocoa
 
 class MNSafha{
     var nass : String
     var kalimat : [MNKalima]
-    init(nass:String){
+    var dataBase : MNDatabase
+    init(dataBase:MNDatabase, nass:String){
+        self.dataBase = dataBase
         self.nass = nass
-        kalimat = MNSafha.getKalimatFromNass(nass: nass)
+        self.kalimat = [MNKalima]()
+        getKalimatFromNass()
     }
-    init(kalimat:[MNKalima]){
+    init(dataBase:MNDatabase,kalimat:[MNKalima]){
+        self.dataBase = dataBase
         self.kalimat = kalimat
         nass = MNSafha.getNassFromKalimat(kalimat: kalimat)
     }
@@ -28,12 +32,14 @@ class MNSafha{
             
             if  NSMutableCharacterSet.letters.contains(char)  {
                 if notHorouf != "" {
-                    textOut.append(" \(notHorouf) ")
+                    textOut.append(" \(notHorouf)")
                     notHorouf = ""
                 }
                 textOut.append(Character(char))
             }else {
-                notHorouf.append(Character(char))
+                // must replace the ' because sqlite problem
+                if Character(char) == "'" {notHorouf.append("\"")}else{
+                    notHorouf.append(Character(char))}
             }
             
         }
@@ -51,33 +57,36 @@ class MNSafha{
     
     
     
-    static func getKalimatFromNass(nass:String,lastPosition:Double = 0)->[MNKalima]{
+        func getKalimatFromNass(){
         let cleanNass = MNSafha.cleanText(text: nass)
         let words = MNSafha.words(text: cleanNass)
-        var kalimat = [MNKalima]()
         for i in words.indices {
             var word = words[i]
-            let kalima = MNKalima()
-            kalima.position = lastPosition + 1 + Double(i)
-            let tachkil = MNKalima.getTachkil(text: word)
-            var str = String(tachkil)
-            str = str.replacingOccurrences(of: "9", with: "")
-            if str != ""{
-                kalima.tashkil = tachkil
-            }else{
-                kalima.tashkil = -1
-            }
+            let kalima = MNKalima(dataBase: dataBase)
+            //kalima.position = lastPosition + 1 + i
+            kalima.tashkil = MNKalima.getTachkil(text: word)
             word = MNKalima.removeTachkil(text: word)
-            let horofNorm = MNKalima.getNormHorof( text: word)
-            str = String(horofNorm)
-            str = str.replacingOccurrences(of: "9", with: "")
-            if str != ""{
-                kalima.horofNorm = horofNorm
-            }else {kalima.horofNorm = -1}
             kalima.kalima = MNKalima.getNormalizedKalima(text: word)
+           // kalima.hifd()
             kalimat.append(kalima)
         }
-        return kalimat
+
+    }
+    static func getKalimatFromNass(nass : String)->[MNKalima]{
+        var kalimat = [MNKalima]()
+        let cleanNass = MNSafha.cleanText(text: nass)
+        let words = MNSafha.words(text: cleanNass)
+        for i in words.indices {
+            var word = words[i]
+            let kalima = MNKalima(dataBase: MNDatabase(path: ""))
+            //kalima.position = lastPosition + 1 + i
+            kalima.tashkil = MNKalima.getTachkil(text: word)
+            word = MNKalima.removeTachkil(text: word)
+            kalima.kalima = MNKalima.getNormalizedKalima(text: word)
+            // kalima.hifd()
+            kalimat.append(kalima)
+        }
+       return kalimat
     }
     
     static func getNassFromKalimat(kalimat : [MNKalima])->String{
@@ -85,14 +94,8 @@ class MNSafha{
         var startIndex = nass.startIndex
         var endIndex = nass.endIndex
         for kalima in kalimat {
-            var str = kalima.kalima
-            if kalima.horofNorm != -1 {
-                str =  MNKalima.getWordWithHorofNorm(word: str, horofNorm: kalima.horofNorm)
-            }
-            if kalima.tashkil != -1 {
-                str = MNKalima.getWordWithTachkil(word: str, tachkil: kalima.tashkil)
-            }
-            
+            kalima.getLafdaTashkil()
+            let str = kalima.kalima
             if nass == "" {
                 nass = str
                 startIndex = nass.startIndex
@@ -112,12 +115,18 @@ class MNSafha{
         return nass
     }
     
-    func highLightKalima(kalima:MNKalima)->NSMutableAttributedString{
-        var attributedNass = NSMutableAttributedString(string: nass)
-        let nsRange = NSRange(kalima.range!, in: nass)
-        let myAttribute = [ NSAttributedStringKey.foregroundColor: NSColor.blue ]
-        attributedNass.addAttributes(myAttribute,range: nsRange)
-    return attributedNass
-}
+//    func highLightKalima(kalima:MNKalima)->NSMutableAttributedString{
+//        let attributedNass = NSMutableAttributedString(string: nass)
+//        let nsRange = NSRange(kalima.range!, in: nass)
+//        let myAttribute = [ NSAttributedStringKey.foregroundColor: NSColor.blue ]
+//        attributedNass.addAttributes(myAttribute,range: nsRange)
+//    return attributedNass
+//}
+    
+    func hifdKalimat() {
+        for kalima in kalimat{
+            kalima.hifd()
+        }
+    }
 }
 

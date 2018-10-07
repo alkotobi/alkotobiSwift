@@ -9,18 +9,43 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    var offset = 1
+    var limit = 200
+    var path  = ""
+    var kitab : MNDBKitab?
     @IBOutlet var textView: NSTextView!
     
+    @IBAction func right(_ sender: NSButton) {
+        if !(kitab?.halAwalJadwal)!{
+            kitab?.taharakIlaSabik()
+            kitab?.hatSijilHali()
+            textView.string = (kitab?.kitab.nass)!
+        }
+    }
+    @IBAction func left(_ sender: NSButton) {
+        if !(kitab?.halAkhirJadwal)!{
+            kitab?.taharakIlaLahik()
+            kitab?.hatSijilHali()
+            textView.string = (kitab?.kitab.nass)!
+        }
+    }
+    @IBAction func swip(_ sender: NSPanGestureRecognizer) {
+        
+    }
+    @IBAction func load(_ sender: NSButton) {
+ 
+         path =  MNUI.openDialogue(fileType: "kitab")
+        kitab = MNDBKitab(path: path, limit: 50)
+        
+    }
+    
     @IBAction func test(_ sender: Any) {
-        let str =
-"""
-حَدَّثَنَا عَبْدُ اللَّهِ بْنُ يُوسُفَ قَالَ حَدَّثَنِي اللَّيْثُ قَالَ حَدَّثَنِي سَعِيدٌ هُوَ ابْنُ أَبِي سَعِيدٍ عَنْ أَبِي شُرَيْحٍ أَنَّهُ قَالَ لِعَمْرِو بْنِ سَعِيدٍ وَهُوَ يَبْعَثُ الْبُعُوثَ إِلَى مَكَّةَ ائْذَنْ لِي أَيُّهَا الْأَمِيرُ أُحَدِّثْكَ
-"""
-       let kalimat = MNSafha.getKalimatFromNass(nass: str)
-        let safha = MNSafha(kalimat: kalimat)
-        let int = Int(textView.string)
-        let attr = safha.highLightKalima(kalima: safha.kalimat[int!])
-        textView.textStorage?.append(attr)
+        _ = MNFile.createDbFolder(folder: MNFile.booksFolderName)
+        
+        
+        
+            let path =  MNUI.openDialogue(fileType: "db")
+            MNImport.makeBookFrom(path: path)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

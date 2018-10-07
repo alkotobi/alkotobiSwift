@@ -37,7 +37,7 @@ class MNDatabase {
     
     func execute(_ sql : String) -> Bool {
         do{try database.execute(sql)
-            print ("executed 💁‍♂️")
+           // print ("executed 💁‍♂️")
             return true
         }
         catch let error{
@@ -47,15 +47,18 @@ class MNDatabase {
     }
 
     func getRecords (query SQL : String) -> [[String:Any]] {
-        var field = [String:Any]()
         var fields=[[String:Any]]()
         do {let stmt = try database.prepare(SQL)
             for row in stmt{
-                field.removeAll()
+                var field = [String:Any]()
                 for (index,name) in stmt.columnNames.enumerated() {
-                    if row[index] != nil {
-                        field[name] = row[index]
-                    }else {field[name] = ""}
+                    if let value = row[index] {
+                            if value is Int64 {
+                                field[name] = Int(value as! Int64)
+                            }else { field[name] = value}
+                    }else if row[index] is String {field[name] = ""
+                    }else {field[name] = -1}
+                    
                 }
                 fields.append(field)
             }
@@ -116,7 +119,7 @@ class MNDatabase {
         var sql1=""
         
         if records == -1 {   // is limit = -1 get all records
-            sql1 = "\(sql)"
+            sql1 = sql
         }else{
            sql1 = " \(sql) limit \(from),\(records)"
         }
@@ -125,7 +128,11 @@ class MNDatabase {
                 field.removeAll()
                 for (index,name) in stmt.columnNames.enumerated() {
                     if row[index] != nil {
+                        if row[index] is Int64 {
+                        field[name] = Int(row[index] as! Int64)
+                        }else{
                         field[name] = row[index]
+                        }
                     }else {field[name] = nil}
                 }
                 fields.append(field)
@@ -164,10 +171,7 @@ class MNDatabase {
            // }
         //}
    
-        var sql=""
-
-
-             sql = "select * from \(table)"
+        let sql = "select * from \(table)"
     
      return getRecords(query: sql, ofset: from, limit: count)
 

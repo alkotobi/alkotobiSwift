@@ -29,8 +29,9 @@ class alkotobiUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var number : UInt64
+         number = 876878768768768
+        print(String(number))
     }
     
 }

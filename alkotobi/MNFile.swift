@@ -28,7 +28,7 @@ class MNFile  {
         #elseif os(OSX)
 //        let documentsDirectory = Bundle.main.bundleURL.deletingLastPathComponent().path
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        let documentsDirectory = paths[0]
+        let documentsDirectory = "/Users/merhab/Desktop/databasetesting"//paths[0]
         #else
         documentsDirectory = ""
         println("OMG, it's that mythical new Apple product!!!")
@@ -142,7 +142,7 @@ class MNFile  {
     static func getDataBasePath(book name:String)->String{  // just give the name of database ex:1.kitab
         let documentsDirectory = MNFile.getDocFolder()
         
-        let dataPath = "\(documentsDirectory)/\(booksFolderName)/\(name)"
+        let dataPath = "\(documentsDirectory)/\(booksFolderName)/\(name).kitab"
         
         //print (dataPath)
 
@@ -158,7 +158,7 @@ class MNFile  {
      
      */
     static func getDataBasePath(kitabId id:Int)->String{
-        let str = "\(id).kitab"
+        let str = "\(id)"
         return getDataBasePath(book: str)
     }
     

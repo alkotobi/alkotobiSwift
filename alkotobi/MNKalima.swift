@@ -87,10 +87,10 @@
 
 
 import Foundation
-class MNKalima {
+class MNKalima : MNSijil{
     static let numbers = Array(48...57)
     static let arkam = Array(1632...1641)
-    static let tachkil = Array(1611...1623)
+    static let tachkil = (1611...1623)
     static let horouf = Array(1569...1594)+Array(1601...1610)+[32]
     static let horoufTachkil = horouf + tachkil
     static let InvisibleChar = [9,10,12,8205]
@@ -114,14 +114,30 @@ class MNKalima {
     static let n6 :Character = "ؤ"
     static let n7 :Character = "ي"
     static let n8 :Character = "ا"
-    static let alifat = [n1,n2,n3,n4,n5,n6,n7,n8]
+    static let way = "واي"
+    static let alifat = [n1,n2,n3,n4,n5,n6,n7]
  //   static let tarkim = [33...47]+[58...95]+[123,125,176,247]+[1548...1567]+[1600,1642,1643,1648]+[8211...8230]
     static let kawsOthmani = [64830,64831]
     var kalima = "" // normalized
-    var tashkil = -1
-    var horofNorm = -1
-    var position = -1.0
+    var tashkilId = -1
+    var tashkil = ""
+
+    var position : Int {return ID}
     var range : Range<String.Index>?
+    var kalimaId = -1
+    
+    override func makeDic() {
+        super.makeDic()
+        dic["tashkilId"] = tashkilId
+      //  dic["horofNorm"] = horofNorm
+        dic["kalimaId"] = kalimaId
+    }
+    override func objMinDic(dic: [String : Any]) {
+        super.objMinDic(dic: dic)
+        tashkilId = dic["tashkilId"] as? Int ?? -1
+       // horofNorm = dic["horofNorm"] as? Int ?? -1
+        kalimaId = dic["kalimaId"] as? Int ?? -1
+    }
     
     func splitToNumCode()->[UInt32]{
         var codes = [UInt32]()
@@ -165,143 +181,193 @@ class MNKalima {
             
             return String(str)
         }
-    static func getTachkil(text:String)->Int{
-        var chars=[Character]()
+    
+    static func getTachkil(text:String)->String{
+        if text == "" {return ""}
+        var bool = false
         for scal in text.unicodeScalars {
-          chars.append(Character(scal))
-        }
-        var tachkils = [Character]()
-        for i in chars.indices{
-
-            switch chars[i]{
-            case t1 :
-                tachkils.append("1")
-            case t2 :
-                tachkils.append("2")
-            case t3 :
-                tachkils.append("3")
-            case t4 :
-                tachkils.append("4")
-            case t5 :
-                tachkils.append("5")
-            case t6 :
-                tachkils.append("6")
-            case t7 :
-                tachkils.append("7")
-            case t8 :
-                tachkils.append("8")
-            default:
-                tachkils.append("9")
+            if tachkil.contains(Int(scal.value)) || alifat.contains(Character(scal)){
+                bool = true
+                break
             }
-            
         }
+        if bool {
+            return text
+        }else {return ""}
         
-        let str = String(tachkils)
-        return Int(str )!
+
 }
     
-    static func getNormHorof(text:String)->Int{
-        var horofNorm = [Character]()
-        for char in text{
-            
-            switch char{
-            case n1 :
-                horofNorm.append("1")
-            case n2 :
-                horofNorm.append("2")
-            case n3 :
-                horofNorm.append("3")
-            case n4 :
-                horofNorm.append("4")
-            case n5 :
-                horofNorm.append("5")
-            case n6 :
-                horofNorm.append("6")
-            case n7 :
-                horofNorm.append("7")
-            default:
-                horofNorm.append("9")
-            }
-            
-        }
-        
-        let str = String(horofNorm)
-        return Int(str)!
-    }
+//    static func getNormHorof(text:String)->Int{
+//        if text == "" {return 9}
+//        var chars = [Character]()
+//        var bool = true
+//        for scal in text.unicodeScalars {
+//            if bool,!((1569...1594).contains(Int(scal.value)) || (1601...1610).contains(Int(scal.value))){return 9}else{bool = false}
+//            chars.append(Character(scal))
+//        }
+//        var horofNorm = [Character]()
+//        for char in chars{
+//            switch char{
+//            case n1 :
+//                horofNorm.append("1")
+//            case n2 :
+//                horofNorm.append("2")
+//            case n3 :
+//                horofNorm.append("3")
+//            case n4 :
+//                horofNorm.append("4")
+//            case n5 :
+//                horofNorm.append("5")
+//            case n6 :
+//                horofNorm.append("6")
+//            case n7 :
+//                horofNorm.append("7")
+//            default:
+//                horofNorm.append("9")
+//            }
+//
+//        }
+//
+//        let str = String(horofNorm)
+//        //TODO: maybe problem here
+//        return Int(str) ?? 9
+//    }
 
     
-    static func getArrayOfTashkil(tachkil : Int)->[Character]{
-        let str = String(tachkil)
-        var arr = [Character]()
-        for char in str {
-            switch char{
-            case "1" : arr.append(MNKalima.t1)
-            case "2" : arr.append(MNKalima.t2)
-            case "3" : arr.append(MNKalima.t3)
-            case "4" : arr.append(MNKalima.t4)
-            case "5" : arr.append(MNKalima.t5)
-            case "6" : arr.append(MNKalima.t6)
-            case "7" : arr.append(MNKalima.t7)
-            case "8" : arr.append(MNKalima.t8)
-            default:
-                       arr.append("9")
-            }
+//    static func getArrayOfTashkil(tachkil : String)->[Character]{
+//        let str = tachkil
+//        var arr = [Character]()
+//        for char in str {
+//            switch char{
+//            case "1" : arr.append(MNKalima.t1)
+//            case "2" : arr.append(MNKalima.t2)
+//            case "3" : arr.append(MNKalima.t3)
+//            case "4" : arr.append(MNKalima.t4)
+//            case "5" : arr.append(MNKalima.t5)
+//            case "6" : arr.append(MNKalima.t6)
+//            case "7" : arr.append(MNKalima.t7)
+//            case "8" : arr.append(MNKalima.t8)
+//            default:
+//                       arr.append("9")
+//            }
+//        }
+//        return arr
+//    }
+//    static func getArrayOfHorofNorm(horofNorm : Int)->[Character]{
+//        let str = String(horofNorm)
+//        var arr = [Character]()
+//        for char in str {
+//            switch char{
+//            case "1" : arr.append(MNKalima.n1)
+//            case "2" : arr.append(MNKalima.n2)
+//            case "3" : arr.append(MNKalima.n3)
+//            case "4" : arr.append(MNKalima.n4)
+//            case "5" : arr.append(MNKalima.n5)
+//            case "6" : arr.append(MNKalima.n6)
+//            case "7" : arr.append(MNKalima.n7)
+//            default:
+//                       arr.append("9")
+//            }
+//        }
+//        return arr
+//    }
+//    static func getWordWithTachkil(word:String,tachkil:String)->String  {
+//
+//        var arr3=[Character]()
+//        let arrhorof = Array(word)
+//        let arrTachkil = MNKalima.getArrayOfTashkil(tachkil: tachkil)
+//        var i = 0
+//
+//        for j in arrTachkil.indices {
+//
+//            if arrTachkil[j] == "9" {
+//                arr3.append(arrhorof[i])
+//                i += 1
+//
+//            }else{
+//                arr3.append(arrTachkil[j])
+//            }
+//
+//
+//        }
+//    return String(arr3)
+//    }
+//    static func getWordWithHorofNorm(word:String,horofNorm:Int)->String  {
+//        if word == "" {return ""}
+//        var arr3=[Character]()
+//        let arrhorof = Array(word)
+//        let arrHorofNorm = MNKalima.getArrayOfHorofNorm(horofNorm: horofNorm)
+//        for i in arrHorofNorm.indices{
+//
+//            if arrHorofNorm[i] != "9"{
+//                arr3 +=  [arrHorofNorm[i]]
+//            }else{
+//                arr3 += [arrhorof[i]]
+//            }
+//        }
+//        return String(arr3)
+//        
+//        
+//    }
+    
+    override func hifd() {
+        let db = MNDatabase(path: MNFile.getBooksListPath())
+        _ = db.execute("PRAGMA journal_mode=WAL;")
+        let lafda = MNlafda(dataBase: db)
+        lafda.hatAwalObj(filter: "lafda = '\(self.kalima)'")
+        if lafda.halMa3doum(){
+            lafda.lafda = self.kalima
+          // lafda.hifd()
+            _ = lafda.dataBase.execute("insert into MNlafda(lafda) values('\(kalima)')")
+                    self.kalimaId = lafda.dataBase.lastInsertRowid
+        }else{
+         self.kalimaId = lafda.ID
         }
-        return arr
-    }
-    static func getArrayOfHorofNorm(horofNorm : Int)->[Character]{
-        let str = String(horofNorm)
-        var arr = [Character]()
-        for char in str {
-            switch char{
-            case "1" : arr.append(MNKalima.n1)
-            case "2" : arr.append(MNKalima.n2)
-            case "3" : arr.append(MNKalima.n3)
-            case "4" : arr.append(MNKalima.n4)
-            case "5" : arr.append(MNKalima.n5)
-            case "6" : arr.append(MNKalima.n6)
-            case "7" : arr.append(MNKalima.n7)
-            default:
-                       arr.append("9")
+
+        if self.tashkil != "" {
+        let tashkil = MNTashkil(dataBase: db)
+        tashkil.hatAwalObj(filter: "tashkil = '\(self.tashkil)'")
+        if tashkil.halMa3doum(){
+            tashkil.tashkil = self.tashkil
+            //tashkil.hifd()
+           _ = tashkil.dataBase.execute("insert into MNTashkil(tashkil) values ('\(tashkil)')")
+        self.tashkilId = tashkil.dataBase.lastInsertRowid
+        }else{
+            self.tashkilId = tashkil.ID
             }
-        }
-        return arr
-    }
-    static func getWordWithTachkil(word:String,tachkil:Int)->String  {
- 
-        var arr3=[Character]()
-        let arrhorof = Array(word)
-        let arrTachkil = MNKalima.getArrayOfTashkil(tachkil: tachkil)
-        var i = 0
-        for j in arrTachkil.indices {
-            if arrTachkil[j] == "9" {
-                arr3.append(arrhorof[i])
-                i += 1
-      
-            }else{
-                arr3.append(arrTachkil[j])
-            }
-        
+
 
         }
-    return String(arr3)
+//        var horof : String
+//        if horofNorm == -1 {horof = "null"} else {horof = "\(horofNorm)"}
+        var tachkil : String
+        if tashkilId == -1 {tachkil = "null"} else {tachkil = "\(tashkilId)"}
+        
+        _ = self.dataBase.execute("INSERT INTO MNKalima(tashkilId,kalimaId) VALUES(\(tachkil),\(kalimaId))")
+        self.ID = dataBase.lastInsertRowid
+        super.hifd()
     }
-    static func getWordWithHorofNorm(word:String,horofNorm:Int)->String  {
-        
-        var arr3=[Character]()
-        let arrhorof = Array(word)
-        let arrHorofNorm = MNKalima.getArrayOfHorofNorm(horofNorm: horofNorm)
-        for i in arrHorofNorm.indices{
-
-            if arrHorofNorm[i] != "9"{
-                arr3 +=  [arrHorofNorm[i]]
-            }else{
-                arr3 += [arrhorof[i]]
-            }
+    override func inchaJadwal() -> Bool {
+        if super.inchaJadwal(){
+           return self.dataBase.execute(" CREATE INDEX IF NOT EXISTS kalimaIdInd ON \(hatIsmJadwal()) (kalimaId) ;")
         }
-        return String(arr3)
-        
-        
+        return false
+    }
+    func getLafdaTashkil(){
+        if self.kalimaId != -1 {
+            let db = MNDatabase(path: MNFile.getBooksListPath())
+            let taskil = MNTashkil(dataBase: db)
+            taskil.hatAwalObj(filter: "ID = \(tashkilId)")
+            if taskil.ID != -1 {
+            kalima = taskil.tashkil
+            }else{
+            let lafda = MNlafda(dataBase: db)
+            lafda.hatAwalObj(filter: "ID = \(kalimaId)")
+            self.kalima = lafda.lafda
+            }
+
+        }
     }
 
 }
